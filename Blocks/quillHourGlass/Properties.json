@@ -1,0 +1,18 @@
+{
+    "Name": "Hourglass",
+    "CreatorName": "Quill Inkwell",
+    "CategoryName": "Time Control",
+    "UniqueID": 3042,
+    "Recipe": {
+    		"Array" : [64,64,64,11,64,11,64,64,64],
+    		"SizeX": 1,
+    		"SizeY": 3,
+    		"SizeZ": 3
+    },
+    "Yield": 1,
+    "SimilarTo": 1,
+    "Textures": {
+        "Mode": 2,
+        "WithNormals" : false
+    }
+}

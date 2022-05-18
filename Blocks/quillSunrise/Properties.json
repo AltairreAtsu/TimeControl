@@ -1,0 +1,18 @@
+{
+    "Name": "Sunrise",
+    "CreatorName": "Quill Inkwell",
+    "CategoryName": "Time Control",
+    "UniqueID": 3046,
+    "Recipe": {
+    		"Array" : [],
+    		"SizeX": 0,
+    		"SizeY": 0,
+    		"SizeZ": 0
+    },
+    "Yield": 1,
+    "SimilarTo": 4,
+    "Textures": {
+        "Mode": 2,
+        "WithNormals" : false
+    }
+}
