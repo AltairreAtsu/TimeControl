@@ -154,7 +154,7 @@ void Event_BlockHitByTool(CoordinateInBlocks At, UniqueID CustomBlockID, wString
 		}
 		else if (CustomBlockID == Rewind_Block) {
 			float currentTime = GetTimeOfDay();
-			if (currentTime - 100 > 0) {
+			if (currentTime - 100 < 0) {
 				float newTime = 2400 + (currentTime - 100);
 				SetTimeOfDay(newTime);
 				pauseTime = newTime;

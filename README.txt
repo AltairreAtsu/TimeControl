@@ -1,6 +1,6 @@
 Time Control
 by Quill Inkwell
-version 0.1
+version 0.2
 
 Installation Instructions:
 ===================================
