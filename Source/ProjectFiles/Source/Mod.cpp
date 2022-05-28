@@ -68,7 +68,7 @@ void RemoveHourGlassMenu(CoordinateInBlocks At) {
 }
 
 void SaveData() {
-	std::wstring path = GetThisModFolderPath();
+	std::wstring path = GetThisModInstallFolderPath();
 	path = path + GetWorldName() + std::wstring(L".txt");
 
 	std::fstream saveFile(path, std::ios::out);
@@ -84,7 +84,7 @@ void SaveData() {
 	}
 }
 void LoadData() {
-	std::wstring path = GetThisModFolderPath();
+	std::wstring path = GetThisModInstallFolderPath();
 	path = path + GetWorldName() + std::wstring(L".txt");
 
 	std::fstream saveFile(path, std::ios::in);
@@ -115,7 +115,7 @@ void Event_BlockDestroyed(CoordinateInBlocks At, UniqueID CustomBlockID, bool Mo
 	}
 }
 
-void Event_BlockHitByTool(CoordinateInBlocks At, UniqueID CustomBlockID, wString ToolName)
+void Event_BlockHitByTool(CoordinateInBlocks At, UniqueID CustomBlockID, wString ToolName, CoordinateInCentimeters ExactHitLocation, bool ToolHeldByHandLeft)
 {
 	if (ToolName == L"T_Stick") {
 		if      (CustomBlockID == Hour_Glass_Block) {
@@ -219,7 +219,7 @@ void Event_AnyBlockPlaced(CoordinateInBlocks At, BlockInfo Type, bool Moved)
 void Event_AnyBlockDestroyed(CoordinateInBlocks At, BlockInfo Type, bool Moved)
 {}
 
-void Event_AnyBlockHitByTool(CoordinateInBlocks At, BlockInfo Type, wString ToolName)
+void Event_AnyBlockHitByTool(CoordinateInBlocks At, BlockInfo Type, wString ToolName, CoordinateInCentimeters ExactHitLocation, bool ToolHeldByHandLeft)
 {}
 /*******************************************************
 
